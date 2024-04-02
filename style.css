@@ -81,9 +81,9 @@ footer {
 }
 
 
-/* Services Section Styling*/
+/* Servicios Styling*/
 #servicios {
-    background-color: #f0f0f0;
+    background-color: #fff;
     padding: 20px;
     text-align: left;
 }
@@ -102,7 +102,19 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Courses Section Styling*/
+/* Nosotros Styling */
+#nosotros {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: left;
+}
+
+#nosotros h2 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+/* Cursos Styling*/
 #cursos {
     background-color: #fff;
     padding: 20px;
@@ -123,21 +135,9 @@ footer {
     margin-bottom: 10px;
 }
 
-/* About Section Styling */
-#nosotros {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: left;
-}
-
-#nosotros h2 {
-    color: #28a745;
-    margin-bottom: 15px;
-}
-
-/* Contact Section Styling */
+/* Contacto Styling */
 #contacto {
-    background-color: #fff;
+    background-color: #f0f0f0;
     padding: 20px;
     text-align: left;
 }
@@ -151,26 +151,7 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Hover Effects */
-#servicios li:hover,
-#contacto p:hover {
-    color: #0056b3;
-    cursor: pointer;
-}
-
-/* Responsive Design Adjustments */
-@media screen and (max-width: 768px) {
-    #servicios, #nosotros, #contacto, #cursos {
-        text-align: center;
-    }
-
-    #servicios ul, #cursos ul {
-        list-style-type: none;
-        padding: 0;
-    }
-}
-
-/* Form Section Styling */
+/* Formulario Styling */
 #formulario {
     max-width: 600px;
     margin: 40px auto;
@@ -227,4 +208,23 @@ fieldset {
 
 legend {
     font-weight: bold;
+}
+
+/* Hover Effects */
+#servicios li:hover,
+#contacto p:hover {
+    color: #0056b3;
+    cursor: pointer;
+}
+
+/* Responsive Design Adjustments */
+@media screen and (max-width: 768px) {
+    #servicios, #nosotros, #contacto, #cursos {
+        text-align: center;
+    }
+
+    #servicios ul, #cursos ul {
+        list-style-type: none;
+        padding: 0;
+    }
 }
