@@ -1,0 +1,230 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0061bd;
+    color: white;
+    padding: 15px 0;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#main_img {
+    background-image: url('img/AC_Repair_Main.webp');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.img-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.img-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ee6c4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.img-button:hover {
+    background-color: #d64b2a;
+}
+
+
+footer {
+    background-color: #0061bd;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Services Section Styling*/
+#servicios {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: left;
+}
+
+#servicios h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#servicios ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+#servicios li {
+    margin-bottom: 10px;
+}
+
+/* Courses Section Styling*/
+#cursos {
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+#cursos h2 {
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+#cursos ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+#cursos li {
+    margin-bottom: 10px;
+}
+
+/* About Section Styling */
+#nosotros {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: left;
+}
+
+#nosotros h2 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+/* Contact Section Styling */
+#contacto {
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+
+#contacto h2 {
+    color: #dc3545;
+    margin-bottom: 15px;
+}
+
+#contacto p {
+    margin-bottom: 10px;
+}
+
+/* Hover Effects */
+#servicios li:hover,
+#contacto p:hover {
+    color: #0056b3;
+    cursor: pointer;
+}
+
+/* Responsive Design Adjustments */
+@media screen and (max-width: 768px) {
+    #servicios, #nosotros, #contacto, #cursos {
+        text-align: center;
+    }
+
+    #servicios ul, #cursos ul {
+        list-style-type: none;
+        padding: 0;
+    }
+}
+
+/* Form Section Styling */
+#formulario {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+fieldset {
+    border: none;
+    margin-top: 20px;
+}
+
+legend {
+    font-weight: bold;
+}
