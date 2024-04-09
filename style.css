@@ -220,8 +220,8 @@ legend {
     cursor: pointer;
 }
 
-/* Responsive Design Adjustments */
-@media screen and (max-width: 768px) {
+/* Estilos para pantallas de celulares */
+@media screen and (max-width: 576px) {
     #servicios, #nosotros, #contacto, #cursos {
         text-align: center;
     }
@@ -229,5 +229,28 @@ legend {
     #servicios ul, #cursos ul {
         list-style-type: none;
         padding: 0;
+    }
+}
+
+/* Estilos para pantallas de tabletas */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    #servicios, #nosotros, #contacto, #cursos {
+        text-align: center;
+    }
+
+    #servicios ul, #cursos ul {
+        list-style-type: none;
+        padding: 0;
+    }
+}
+
+/* Estilos para pantallas de escritorio */
+@media screen and (min-width: 993px) {
+    #servicios, #nosotros, #contacto, #cursos {
+        /* Estilos para escritorio aquí */
+    }
+
+    #servicios ul, #cursos ul {
+        /* Estilos para escritorio aquí */
     }
 }
