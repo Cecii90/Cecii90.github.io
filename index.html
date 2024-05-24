@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1>Soluciones en Refrigeración</h1>
+            <h1>Dulcinea Bakery</h1>
             <nav>
                 <ul>
                     <li><a href="#servicios">Servicios</a></li>
@@ -32,49 +34,72 @@
 
         <section id="servicios" class="flex-container">
             <h2>Nuestros Servicios</h2>
-            <p>Ofrecemos una amplia variedad de servicios:</p>
+            <p>Descubre la amplia gama de servicios que ofrecemos para deleitar tu paladar y hacer tus momentos especiales aún más dulces:</p>
             <ul>
-                <li>Instalaciones de AA y cámaras frigoríficas</li>
-                <li>Reparaciones</li>
-                <li>Presupuestos</li>
-                <li>Asesoramientos</li>
+                <li>Tartas Personalizadas: Tartas a medida para cualquier ocasión.</li>
+                <li>Repostería Fina: Pasteles, cupcakes y galletas artesanales.</li>
+                <li>Eventos Corporativos: Soluciones dulces para eventos empresariales.</li>
+                <li>Clases de Repostería: Talleres y cursos para todos los niveles.</li>
+                <li>Delivery de Pasteles: Entrega a domicilio de nuestras delicias.</li>
+                <li>Mesas de Postres: Diseño y montaje de mesas de postres temáticas.</li>
             </ul>
         </section>
 
         <section id="nosotros" class="flex-container">
             <h2>Sobre Nosotros</h2>
-            <p>Somos una empresa dedicada a ...</p>
+                <p>Somos una pastelería dedicada a crear experiencias dulces e inolvidables. Desde nuestros inicios, hemos puesto pasión y creatividad en cada uno de nuestros productos, utilizando ingredientes de la más alta calidad para garantizar el sabor y la frescura. Nuestro equipo de expertos pasteleros está comprometido con la excelencia y la innovación, lo que nos permite ofrecer una amplia gama de delicias artesanales que satisfacen todos los gustos y necesidades.</p>
+                <p>En nuestra pastelería, cada cliente es especial y trabajamos arduamente para convertir sus ideas en realidades deliciosas. Ya sea para un evento corporativo, una celebración familiar o simplemente para disfrutar de un dulce capricho, estamos aquí para ayudarte a hacer que cada momento sea más dulce y memorable.</p>
         </section>
 
         <section id="cursos" class="flex-container">
             <h2>Nuestros Cursos</h2>
             <p>Ofrecemos cursos grupales e individuales:</p>
             <ul>
-                <li>Instalador matriculado AA</li>
-                <li>Electricista matriculado domiciliario</li>
+                <li><strong>Curso de Pastelería Básica:</strong> Aprende las técnicas fundamentales de la pastelería, desde la elaboración de masas y cremas hasta la decoración básica de pasteles. Ideal para principiantes.</li>
+                <li><strong>Curso de Pastelería Avanzada:</strong> Perfecciona tus habilidades con técnicas avanzadas y modernas de repostería. Este curso incluye la creación de postres sofisticados y decoraciones detalladas.</li>
+                <li><strong>Curso de Decoración de Tartas:</strong> Domina el arte de la decoración de tartas con fondant, glaseado y otros materiales. Aprende a crear diseños impresionantes para cualquier ocasión.</li>
             </ul>
         </section>
 
         <section id="contacto" class="flex-container">
             <h2>Contáctenos</h2>
             <p>Phone: +54 (011) 555-5555</p>
-            <p>Email: empresa@empresacorp.com</p>
+            <p>Email: dulcineabakery@gmail.com</p>
         </section>
 
         <div id="formulario" class="flex-container">
-            <form id="survey-form" class="flex-container">
+            <form id="survey-form" class="flex-container" onsubmit="return validateForm()">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
-
+        
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-
+        
                 <label for="tel">Teléfono:</label>
-                <input type="number" id="tel" name="tel" required>
-
+                <input type="tel" id="tel" name="tel" pattern="\d{10}" required>
+        
+                <label for="service">Servicio de interés:</label>
+                <select id="service" name="service" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="tartas">Tartas Personalizadas</option>
+                    <option value="reposteria">Repostería Fina</option>
+                    <option value="cursos">Clases de Repostería</option>
+                    <option value="mesas">Mesas de Postres</option>
+                </select>
+        
+                <label for="subscribe">¿Desea recibir nuestras ofertas?</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+        
+                <label>¿Cómo nos conoció?</label>
+                <fieldset>
+                    <label><input type="radio" name="reference" value="amigo" required> Amigo</label>
+                    <label><input type="radio" name="reference" value="internet"> Internet</label>
+                    <label><input type="radio" name="reference" value="otros"> Otros</label>
+                </fieldset>
+        
                 <label for="comments">Comentario:</label>
                 <textarea id="comments" name="comments" rows="4" required></textarea>
-
+            
                 <button type="submit">Enviar</button>
             </form>
         </div>
